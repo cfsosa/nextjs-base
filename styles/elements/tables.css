@@ -1,0 +1,36 @@
+.tablebox {
+    @apply flex flex-col;
+}
+
+.tablebox.dashboard {
+    @apply border border-gray-700 rounded-lg;
+}
+
+.tablebox.list {
+    @apply border-b border-gray-700;
+}
+
+.tablebox .title{
+    @apply bg-gray-500 text-gray-900 rounded-t-lg px-4 py-3 font-bold border-b border-gray-700;
+}
+
+.tablebox table {
+    @apply min-w-full divide-y divide-gray-700;
+}
+
+.tablebox thead {
+    @apply text-sm text-black font-medium text-left;
+}
+
+.tablebox th {
+    @apply px-4 py-1.5;
+}
+
+.tablebox tbody {
+    @apply divide-y divide-gray-200 text-sm font-light text-black;
+}
+
+.tablebox td {
+    @apply px-3 py-3 whitespace-nowrap;
+}
+

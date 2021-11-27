@@ -1,0 +1,65 @@
+:root {
+	--color-primary: #6E55CE;
+	--color-primary-opacity: #7D66D3;
+	--color-primary-light: #F2EFFB;
+	--color-secondary: #4CC9F0;
+	--color-secondary-opacity: #C9EFFB;
+	--color-overlay: rgba(0, 0, 0, 0.5);
+	--color-white: white;
+	--color-black: #00072B;
+	--color-alert-success: #7BC950;
+	--color-alert-error: #FF4652;
+	--color-gray-200: #fafcfc;
+	--color-gray-400: #f1f5f6;
+	--color-gray-500: #f4f4f4;
+	--color-gray-600: #d6e1e3;
+	--color-gray-700: #e8e8e8;
+	--color-gray-800: #d1dde0;
+	--color-gray-900: #111922;
+	--color-facebook: #4267b2;
+	--transparent-gray-200: rgb(221, 221, 221, 0.5);
+	--transparent-gray-800: rgb(68, 68, 68, 0.5);
+}
+
+
+.light {
+	--color-primary: #6E55CE;
+	--color-primary-opacity: #7D66D3;
+	--color-primary-light: #F2EFFB;
+	--color-secondary: #4CC9F0;
+	--color-secondary-opacity: #4CC9F0;
+	--color-overlay: rgba(0, 0, 0, 0.5);
+	--color-white: white;
+	--color-black: #00072B;
+	--color-alert-success: #7BC950;
+	--color-alert-error: #FF4652;
+	--color-gray-200: #fafcfc;
+	--color-gray-400: #f1f5f6;
+	--color-gray-500: #f4f4f4;
+	--color-gray-600: #d6e1e3;
+	--color-gray-700: #e8e8e8;
+	--color-gray-800: #d1dde0;
+	--color-gray-900: #111922;
+	--color-facebook: #4267b2;
+	--transparent-gray-200: rgb(221, 221, 221, 0.5);
+	--transparent-gray-800: rgb(68, 68, 68, 0.5);
+}
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+	.hide-scroll-bar::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.hide-scroll-bar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+}
+
+@import url(elements/tables.css);
